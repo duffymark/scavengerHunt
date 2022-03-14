@@ -21,9 +21,9 @@ function shuffle(array) {
 }
 
 
-const pickDescCard = document.querySelector(".pickDescCard");
+const descCard = document.querySelector(".descCard");
 
-pickDescCard.addEventListener('click', function() {
+descCard.addEventListener('click', function() {
     const descArray = ['a new', 'an old', 'a stinky', 'a red', 'a shiny', 'your favourite', 'a blue', 'a red', 'a yellow', 'a green', 'a purple', 'a pink'];
     shuffle(descArray)
     console.log(descArray[1])
@@ -32,16 +32,34 @@ pickDescCard.addEventListener('click', function() {
 
     const descCardRando = document.querySelector('.descCardRando');
     descCardRando.textContent = descArray[1];
+
+      /* Color Generator */
+
+const cardColor = document.querySelector(".descCard");
+
+// color changer
+
+cardColor.style.backgroundColor = `rgb( ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 
+${Math.floor(Math.random() * 256)})`
 })
 
-const descCard = document.querySelector(".descCard");
+const itemCard = document.querySelector(".itemCard");
 
-const pickItemCard = document.querySelector(".pickItemCard");
+const pickItemCard = document.querySelector(".itemCard");
 
 pickItemCard.addEventListener('click', function() {
-    const objectsArray = ['photo','starts with the letter t','starts with the letter s', 'starts with the letter m', 'utensil', 'candle', 'dice', 'socks', 'book', 'shirt', 'hat', 'crayon', 'toy', 'magnet', 'fruit', 'footwear', 'picture' ];
+    const objectsArray = ['photo','starts with the letter t','starts with the letter s', 'starts with the letter m', 'utensil', 'candle', 'dice', 'socks', 'book', 'shirt', 'hat', 'crayon', 'toy','starts with the letter r', 'magnet', 'fruit', 'footwear','starts with the letter l', 'picture', 'starts with the letter f', 'pants', 'stuffy', 'game', 'jewelery' ];
     shuffle(objectsArray)
     console.log(objectsArray[1])
+
+         /* Color Generator */
+
+const cardColor = document.querySelector(".itemCard");
+
+// color changer
+
+cardColor.style.backgroundColor = `rgb( ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 
+${Math.floor(Math.random() * 256)})`
 
     //print to page
 
@@ -49,20 +67,8 @@ pickItemCard.addEventListener('click', function() {
     randoItemCard.textContent = objectsArray[1];
 })
 
-//card flipper
 
-const card = document.getElementById('card');
 
-card.addEventListener('click', flipCard);
-  function flipCard(){
-    card.classList.toggle('flipCard')
-    console.log('card clicked')
-  }
 
-  const cardTwo = document.getElementById('cardTwo');
 
-cardTwo.addEventListener('click', flipCardTwo);
-  function flipCardTwo(){
-    cardTwo.classList.toggle('flipCardTwo')
-    console.log('clicked card 2')
-  }
+
