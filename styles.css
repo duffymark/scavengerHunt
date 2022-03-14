@@ -130,7 +130,7 @@ footer p{
   user-select: none;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px black;
 }
 
 .itemCard{
@@ -142,7 +142,7 @@ footer p{
   user-select: none;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px black;
 }
 
 .itemCardRando, .descCardRando{
