@@ -91,6 +91,9 @@ footer p{
     width: 100%;
     padding: 2%;
     overflow: hidden;
+    position:absolute;
+    bottom:0;
+    height:60px; 
 
 }
 
