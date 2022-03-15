@@ -92,7 +92,6 @@ footer p{
     padding: 2%;
     /* background-size: cover;  */
     overflow: hidden;
-    position: absolute; 
     left: 0 ; right: 0; bottom: 0; 
     height:[footer-height] 
 }
