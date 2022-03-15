@@ -48,7 +48,7 @@ const itemCard = document.querySelector(".itemCard");
 const pickItemCard = document.querySelector(".itemCard");
 
 pickItemCard.addEventListener('click', function() {
-    const objectsArray = ['photo','starts with the letter t','starts with the letter s', 'starts with the letter m', 'utensil', 'candle', 'dice', 'socks', 'book', 'shirt', 'hat', 'crayon', 'toy','starts with the letter r', 'magnet', 'fruit', 'footwear','starts with the letter l', 'picture', 'starts with the letter f', 'pants', 'stuffy', 'game', 'jewelery' ];
+    const objectsArray = ['photo','starts with the letter t','starts with the letter s', 'starts with the letter m', 'utensil', 'candle', 'dice', 'socks', 'book', 'shirt', 'hat', 'crayon', 'toy','starts with the letter r', 'magnet', 'fruit', 'footwear','starts with the letter l', 'picture', 'starts with the letter f', 'pants', 'stuffy', 'game', 'jewelery', 'an animal', 'something heavy', 'something light' ];
     shuffle(objectsArray)
     console.log(objectsArray[1])
 
